@@ -1,0 +1,5 @@
+Метод public static void foo()throws IOException,FileNotFoundException надо выносить из метода
+public static void main(String[] args) - методы не могут объявляться внутри другого метода.
+Исключение FileNotFoundException e не будет обработано, т.к. является наследником более общего
+исключения IOException e, котоое будет вызвано ранее, а блок catch вызывается только один раз.
+
