@@ -1,0 +1,6 @@
+public static String[] separateString (String str) {
+String[] strings = new String[2];
+strings[0] = str.substring(0, str.length()/2);
+strings[1] = str.substring(str.length()/2);
+return strings;
+}
