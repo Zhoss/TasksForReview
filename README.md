@@ -51,7 +51,7 @@
         
         Задание 19 Есть таблица book с колонками name и author_id и таблица author с колонками id и name. Вывести все книги определенного автора (author.name).
         
-        Задание 20 Каким будет значение переменной x, выведенной в консоль, при вызове метода bar()?
+        + Задание 20 Каким будет значение переменной x, выведенной в консоль, при вызове метода bar()?
             void bar() {
                 int[] nums = {1, 2, 3};
                 for ( int x = 0; x < nums.length; x++) {
@@ -60,7 +60,7 @@
                 System.out.println(x);
             }
         
-        Задание 21 Какой результат выведет вызов метода foo()?
+        + Задание 21 Какой результат выведет вызов метода foo()?
             void foo() {
                 String m = "Hello";
                 System.out.print(m);
@@ -71,7 +71,7 @@
                 m += " World!";
             }
         
-        Задание 22 Каким будет результат сравнения в следующем коде?
+        + Задание 22 Каким будет результат сравнения в следующем коде?
             String s1 = "abc";
             String s2 = "abc";
             String s3= new String("abc");
@@ -79,7 +79,7 @@
             System.out.println("s1 == s3 ? "+(s1==s3));
             System.out.println("s1 equals s3 ? "+(s1.equals(s3)));
         
-        Задание 23 Какой результат будет выведен в консоль?
+        + Задание 23 Какой результат будет выведен в консоль?
             public abstract class OurAbstractClass {
                 public OurAbstractClass() {
                     System.out.println("This is abstract class constructor");
@@ -94,7 +94,7 @@
                 }
             }
         
-        Задание 24 Какая проблема возникнет с этим кодом?
+        + Задание 24 Какая проблема возникнет с этим кодом?
             public static void main(String[] args) {
                 try {
                     foo();
