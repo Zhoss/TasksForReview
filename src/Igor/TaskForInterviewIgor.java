@@ -1,6 +1,7 @@
 package Igor;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class TaskForInterviewIgor {
@@ -110,6 +111,32 @@ public class TaskForInterviewIgor {
                 }
             }
             System.out.println(word);
+        }
+    }
+
+    public static void task27() {
+
+        System.out.println();
+        System.out.println("Задание 27");
+        Map<Integer, String> hashMap = new HashMap<>();
+
+        hashMap.put(1, "first");
+        hashMap.put(2, "second");
+        hashMap.put(3, "third");
+        hashMap.put(4, "forth");
+        hashMap.put(5, "fifth");
+
+        System.out.println("hashMap = " + hashMap);
+
+        Iterator<Map.Entry<Integer, String>> itr = hashMap.entrySet().iterator();
+        while (itr.hasNext()) {
+            Map.Entry<Integer, String> entry = itr.next();
+            System.out.println("entry = " + entry);
+
+        }
+
+        for (Map.Entry<Integer, String> integerStringEntry : hashMap.entrySet()) {
+            System.out.println("integerStringEntry = " + integerStringEntry);
         }
     }
 }
