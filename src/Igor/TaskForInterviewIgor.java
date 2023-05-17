@@ -1,10 +1,37 @@
 package Igor;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 public class TaskForInterviewIgor {
+
+    public static void task12() {
+
+        System.out.println();
+        System.out.println("Задание 12");
+        Map<String, String> books = new HashMap<>();
+        books.put("Evgeniy Onegin", "A.S. Pushkin");
+        books.put("Anna Karenina", "L.N. Tolstoy");
+        books.put("Mziry", "M.U. Lermontov");
+        books.put("Ruslan i Ludmila", "A.S. Pushkin");
+
+        for (Map.Entry<String, String> entry : books.entrySet()) {
+
+            System.out.println(entry);
+        }
+
+        String[] bookStrings = new String[books.size()];
+
+        List<String> booksList = new ArrayList<>();
+
+        for (Map.Entry<String, String> entry : books.entrySet()) {
+
+            String s = "\""+entry.getKey() + "\" " + entry.getValue();
+            booksList.add(s);
+        }
+
+        booksList.toArray(bookStrings);
+        System.out.println(Arrays.toString(bookStrings));
+    }
 
     public static void task20() {
         System.out.println();
