@@ -26,10 +26,10 @@ public class TasksForInterviewDenis {
 
     public static void task2() {
         Random random = new Random();
-        int[] numbers = new int[random.nextInt(10) + 1];
-        for (int i = 0; i < numbers.length; i++) {
+        int[] numbers = {1,2,3,4,5};
+     /*   for (int i = 0; i < numbers.length; i++) {
             numbers[i] = (int) ((Math.random() * 10) + 1);
-        }
+        }*/
         System.out.println(Arrays.toString(numbers));
 
         for (int i = 0; i < numbers.length / 2; i++) {
